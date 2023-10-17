@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Input your name"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:inputType="phone"
+        android:imeOptions="actionPrevious"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/mainNemo"
+        app:boxCornerRadiusTopStart="24dp"
+        app:boxCornerRadiusBottomStart="24dp"
+        app:boxStrokeWidth="2dp"
+        app:endIconMode="none"
+        app:prefixText="+7 ("
+        app:boxBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Input your name"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:textColorHint="@color/gray"
+            android:textColor="@color/black"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/show_phone_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Show phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_box" />
+</androidx.constraintlayout.widget.ConstraintLayout>

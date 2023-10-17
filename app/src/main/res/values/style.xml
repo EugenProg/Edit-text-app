@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FontStyle">
+        <item name="fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="FontStyle.Bold">
+        <item name="fontFamily">@font/montserrat_bold</item>
+    </style>
+
+    <style name="FontStyle.Italic">
+        <item name="fontFamily">@font/montserrat_italic</item>
+    </style>
+
+    <!--    Regular  -->
+
+    <style name="H_12" parent="FontStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="H_14" parent="FontStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!--    Bold  -->
+
+    <style name="H_12_B" parent="FontStyle.Bold">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="H_14_B" parent="FontStyle.Bold">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>
