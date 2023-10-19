@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EditText Application</string>
+    <string name="netherlands_amesterdam">Netherlands, Amesterdam <font color="#8E63EE"><u>Change location</u></font></string>
+    <string name="change_location">Change location</string>
 </resources>
